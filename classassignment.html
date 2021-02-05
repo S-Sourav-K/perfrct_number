@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>class assigment</title>
+    <script>
+        function perfectNumber() {
+            var flag, number, remainder, addition = 0,
+                i;
+            number = Number(document.getElementById("N").value);
+            flag = number;
+            for (i = 0; i < number; i++) {
+                remainder = number % i;
+                if (remainder == 0) {
+                    addition += i;
+                }
+            }
+            if (addition == flag) {
+                window.alert("-The inputed number is Perfect");
+            } else {
+                window.alert("-The inputed number is not Perfect");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <h1>Check Perfect or not</h1>
+    <hr color="cyan"> Enter The Number :<input type="text" name="n" id="N" />
+    <hr color="cyan">
+    <br>
+    <center><button onClick="perfectNumber()">CLICK HERE</button>
+</body>
+
+</html>
